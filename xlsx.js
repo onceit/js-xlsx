@@ -1336,7 +1336,7 @@ if (typeof exports !== 'undefined') {
 	if (typeof module !== 'undefined' && module.exports) {
 		if(has_buf && typeof jszip === 'undefined') jszip = require('jszip');
 		if(typeof jszip === 'undefined') jszip = require('./jszip').JSZip;
-		_fs = require('fs');
+		//_fs = require('fs'); -- commented out for browser usage in angular/webpack
 	}
 }
 var attregexg=/([\w:]+)=((?:")([^"]*)(?:")|(?:')([^']*)(?:'))/g;
